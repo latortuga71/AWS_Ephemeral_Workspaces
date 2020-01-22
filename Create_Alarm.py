@@ -10,7 +10,7 @@ def create_alarm(Id):
                                     AlarmDescription='Created By Create_Alarm_Lambda_Func Triggered when new workspace is created.',
                                     ActionsEnabled=True,
                                     OKActions=[], ## empty for now
-                                    AlarmActions=['arn:aws:sns:us-east-1:862402190812:Log0ff_Lambda'], ## arn for lambda function being called is here this sns arn calls the lambda function
+                                    AlarmActions=['FUNCTION ARN'], ## arn for lambda function being called is here this sns arn calls the lambda function
                                     InsufficientDataActions=[], # empty for now
                                     MetricName='SessionDisconnect',
                                     Namespace='AWS/WorkSpaces',
